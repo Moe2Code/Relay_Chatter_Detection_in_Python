@@ -70,8 +70,9 @@ print(chatter_instances)     # Show chatter instances
 
 j = 0
 
-# Extrapolate where chatter instances cross upper limit (UL)
 for instance in chatter_instances:
+
+    # Extrapolate where each chatter instance cross the upper limit (UL)
     x = rd_time[instance[0]-1:instance[-1]+2]
     y = rd_value[instance[0]-1:instance[-1]+2]
     y_UL = [UL]*(len(instance)+2)
@@ -98,4 +99,5 @@ for instance in chatter_instances:
     plt.show()
 
     j += 1
+
 relay_data.close()
