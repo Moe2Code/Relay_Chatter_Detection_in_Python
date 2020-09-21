@@ -1,0 +1,12 @@
+INSTRUCTIONS ON HOW TO USE THE RELAY CHATTER DETECTION SCRIPT
+
+Software Used:
+- PyCharm Community IDE, Version 2019.1.3
+
+How to use:
+1- Paste your relay data in relay_data.txt using the same format shown
+2- In PyCharm, adjust the upper limit to what constitute start of chatter. Currently the variable UL is set to 4.5 Vdc. 
+   This means if a signal of 5 Vdc falls below UL, then the script will start counting it as a chatter instance
+3- Run RelayChatterDetection.py in PyCharm. PyCharm will plot and save the full signal and chatter instances.
+   Close the plot windows so that the script will finish running. 
+4- The chatter instances with their associated chatter durations will be saved in the same directory as the script
